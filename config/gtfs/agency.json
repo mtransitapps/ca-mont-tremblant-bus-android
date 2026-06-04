@@ -1,5 +1,5 @@
 {
-    "agency_id_cleanup_regex_TODO": "^Ville\\s+de\\s+",
+    "agency_id_cleanup_regex": "^Transport\\s+en\\s+commun\\s+de\\s+",
     "target_route_type_id": 3,
     "default_color": "044B53",
     "default_color_comment": "TEAL (from web-site CSS)",
