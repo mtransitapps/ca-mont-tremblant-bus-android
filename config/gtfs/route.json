@@ -1,0 +1,31 @@
+{
+    "default_route_id_enabled": true,
+    "use_route_short_name_for_route_id": true,
+    "route_id_cleanup_regex": "^zenbus:Line:|:LOC$",
+    "default_route_long_name_enabled": true,
+    "route_short_name_to_route_id_configs": [
+        {
+            "route_short_name": "BMT",
+            "route_id": 21320
+        }
+    ],
+    "direction_splitter_enabled": true,
+    "direction_finder_enabled": true,
+    "direction_headsign_cleaners": [
+        {
+            "regex": "(Fin de service)",
+            "regex_comment": "remove useless direction head-sign"
+        }
+    ],
+    "trip_headsign_remove_via": true,
+    "trip_headsign_cleaners": [
+        {
+            "regex": "(1)",
+            "regex_comment": "remove useless trip head-sign"
+        }
+    ],
+    "use_stop_id_hash_code": true,
+    "stop_id_cleanup_regex": "^zenbus:(StopPoint:SP|StopArea:SA):|:LOC$",
+    "use_stop_code_for_stop_id": false,
+    "stop_name_cleaners": []
+}
