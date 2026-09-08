@@ -27,5 +27,18 @@
     "use_stop_id_hash_code": true,
     "stop_id_cleanup_regex": "^zenbus:(StopPoint:SP|StopArea:SA):|:LOC$",
     "use_stop_code_for_stop_id": false,
-    "stop_name_cleaners": []
+    "stop_name_cleaners": [
+        {
+            "regex": "^\\d+ - ",
+            "comment": "remove starts with stop code"
+        }
+    ],
+    "use_stop_name_for_stop_code": true,
+    "stop_code_cleaners": [
+        {
+            "regex": "^(\\d+) - .*$",
+            "replacement": "$1",
+            "comment": "keep starts with stop code"
+        }
+    ]
 }
